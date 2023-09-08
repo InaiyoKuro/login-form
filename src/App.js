@@ -7,7 +7,8 @@ import Register from './components/Register';
 
 function App() {
   return (
-  <BrowserRouter>
+    <BrowserRouter>
+    <div>Hello World</div>
     <Routes>
       <Route path="/" element={<ChatRoom />}></Route>
       <Route path="/login" element={<Login />}></Route>
