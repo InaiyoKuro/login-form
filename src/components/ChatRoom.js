@@ -1,28 +1,23 @@
 import React from 'react'
-import { Table } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
 
 
 
 export default function ChatRoom() {
   return (
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-      </tbody>
-    </Table>
+    <Container>
+
+    <Nav defaultActiveKey="/" as="ul">
+      <Nav.Item as="li">
+        <Nav.Link href="/">Main</Nav.Link>
+      </Nav.Item>
+      <Nav.Item as="li">
+        <Nav.Link eventKey="link-1" href='/login'>Login</Nav.Link>
+      </Nav.Item>
+    </Nav>
+    </Container>
   );
+
 
 }
