@@ -7,14 +7,15 @@ import Register from './components/Register';
 
 function App() {
   return (
-    <BrowserRouter>
-    <div>Hello World</div>
-    <Routes>
-      <Route path="/" element={<ChatRoom />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/register" element={<Register />}></Route>
-    </Routes>
-  </BrowserRouter>
+    <Login />
+  //   <BrowserRouter>
+  //   <div>Hello World</div>
+  //   <Routes>
+  //     <Route path="/" element={<ChatRoom />}></Route>
+  //     <Route path="/login" element={<Login />}></Route>
+  //     <Route path="/register" element={<Register />}></Route>
+  //   </Routes>
+  // </BrowserRouter>
   );
 }
 
